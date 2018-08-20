@@ -23,9 +23,9 @@
           <li><a href="#">Доставка и оплата</a></li>
           <li><a href="#">О компании</a></li>
         </ul>
-        <a class="search" href="search.html">Поиск</a>
-        <a class="login-link" href="login.html">Вход</a>
-        <a class="basket" href="basket.html">Корзина</a>
+        <a class="search" href="#">Поиск</a>
+        <a class="login-link" href="#">Вход</a>
+        <a class="basket" href="#">Корзина</a>
       </nav>
       <p class="timetable">
         С 10 до 20, ежедневно
@@ -141,7 +141,7 @@
           <span>8 812 450-25-25</span>
           (с 10 до 20 ежедневно)
         </p>
-        <a class="button feedback-button" href="feedback.html" aria-label="Форма обратной связи">Форма обратной связи</a>
+        <a class="button feedback-button" href="#" aria-label="Форма обратной связи">Форма обратной связи</a>
       </section>
     </main>
 
@@ -165,6 +165,56 @@
         <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy; 2017</p>
       </div>
     </footer>
+
+    <section class="modal modal-login">
+      <h2 class="visually-hidden">Личный кабинет</h2>
+      <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label class="visually-hidden" for="user-email">Электронная почта</label>
+          <input class="login-icon-email" id="user-email" type="text" name="email" placeholder="Электронная почта">
+        </p>
+        <p>
+          <label class="visually-hidden" for="user-password">Пароль</label>
+          <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
+        </p>
+        <p class="login-password-info">
+          <a class="restore" href="#">Забыли пароль?</a>
+          <a class="new-registration" href="#">Новая регистрация</a>
+        </p>
+        <button class="button" type="submit">Войти</button>
+      </form>
+    </section>
+
+    <section class="modal modal-search">
+      <h2 class="visually-hidden">Поиск</h2>
+      <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label class="visually-hidden" for="site-search">Поиск</label>
+          <input class="icon-search" id="site-search" type="text" name="search" placeholder="Что ищем?">
+        </p>
+    </form>
+    </section>
+
+    <section class="modal modal-feedback">
+      <h2 class="visually-hidden">Обратная связь</h2>
+      <p>Мы обязательно вам ответим!</p>
+      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label class="visually-hidden" for="user-name">Ваше имя</label>
+          <input class="feedback-icon-name" id="user-name" type="text" name="name" placeholder="Как вас зовут?">
+        </p>
+        <p>
+          <label class="visually-hidden" for="user-feedback-email">Электронная почта</label>
+          <input class="feedback-icon-email" id="user-feedback-email" type="text" name="feedback-email" placeholder="Ваша почта для ответа?">
+        </p>
+        <p>
+          <label class="visually-hidden" for="user-feedback">Напишите что-нибудь...</label>
+          <input class="feedback-icon-text" id="user-feedback" type="textarea" name="feedback-text" placeholder="Напишите что-нибудь...">
+        </p>
+        <button class="button" type="submit">Отправить</button>
+      </form>
+      <button class="modal-close" type="button">Закрыть</button>
+    </section>
 
   </body>
 </html>
