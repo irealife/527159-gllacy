@@ -10,12 +10,12 @@
         <a class="main-header-logo">
           <img src="img/logo.svg" width="155" height="65" alt="Логотип магазина мороженого">
         </a>
-        <ul class="site-navigation">
-          <li class="site-navigation-current"><a href="catalog.html">Каталог</a>
-            <ul class="site-navigation-item">
-              <li class="site-navigation-news">Новинки</li>
+        <ul class="navigation">
+          <li class="navigation-current"><a href="catalog.html">Каталог</a>
+            <ul class="navigation-item">
+              <li class="navigation-news">Новинки</li>
               <li>Сливочное</li>
-              <li class="site-navigation-item-current">Щербеты</li>
+              <li class="navigation-item-current">Щербеты</li>
               <li>Фруктовый лед</li>
               <li>Мелорин</li>
             </ul>
@@ -24,7 +24,34 @@
           <li><a href="#">О компании</a></li>
         </ul>
         <a class="search" href="#">Поиск</a>
+          <section class="modal modal-search">
+            <h2 class="visually-hidden">Поиск</h2>
+            <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+              <p>
+                <label class="visually-hidden" for="site-search">Поиск</label>
+                <input class="icon-search" id="site-search" type="text" name="search" placeholder="Что ищем?">
+              </p>
+          </form>
+          </section>
         <a class="login-link" href="#">Вход</a>
+          <section class="modal modal-login">
+            <h2 class="visually-hidden">Личный кабинет</h2>
+            <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+              <p>
+                <label class="visually-hidden" for="login-email">Электронная почта</label>
+                <input class="icon-email" id="login-email" type="text" name="email" placeholder="Электронная почта">
+              </p>
+              <p>
+                <label class="visually-hidden" for="login-password">Пароль</label>
+                <input class="icon-password" id="login-password" type="password" name="password" placeholder="Пароль">
+              </p>
+              <p class="password-info">
+                <a class="restore" href="#">Забыли пароль?</a>
+                <a class="new-registration" href="#">Новая регистрация</a>
+              </p>
+              <button class="button" type="submit">Войти</button>
+            </form>
+          </section>
         <a class="basket" href="#">Корзина</a>
       </nav>
       <p class="timetable">
@@ -50,6 +77,17 @@
           <a href="#"><img src="img/slide3.png" width="1046" height="881" alt="Пломбир с помадкой и клубничный щербет"></a>
         </figure>
         <a class="button slide-show-button" href="#">Давайте оба!</a>
+        <ul class="slides-switches">
+          <li class="slide-radio">
+            <button class="slide-btn">Первый слайд</button>
+          </li>
+          <li class="slide-radio">
+            <button class="slide-btn">Второй слайд</button>
+          </li>
+          <li class="slide-radio">
+            <button class="slide-btn">Третий слайд</button>
+          </li>
+        </ul>
       </section>
 
       <section class="stock">
@@ -58,12 +96,12 @@
           <li class="stock-item">
             <h3 class="stock-text">Малинка даром!</h3>
             <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно</p>
-            <a class="button stock-item-button" href="#">Хочу варенье!</a>
+            <a class="button stock-button" href="#">Хочу варенье!</a>
           </li>
           <li class="stock-item">
             <h3 class="stock-text">Шоколадки даром!</h3>
             <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно</p>
-            <a class="button stock-item-button" href="#">Хочу шоколадки!</a>
+            <a class="button stock-button" href="#">Хочу шоколадки!</a>
           </li>
         </ul>
       </section>
@@ -96,11 +134,11 @@
 
       <section class="info">
         <p class="info-content">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</p>
-        <ul class="info-content-list">
-          <li class="info-content-item">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
-          <li class="info-content-item">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
-          <li class="info-content-item">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</li>
-          <li class="info-content-item">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
+        <ul class="info-list">
+          <li class="info-item">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
+          <li class="info-item">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
+          <li class="info-item">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</li>
+          <li class="info-item">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
         </ul>
       </section>
 
@@ -115,8 +153,8 @@
           <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
           <form class="dispatch-form" action="https://echo.htmlacademy.ru" method="post">
             <p>
-              <label class="visually-hidden" for="user-dispatch-email">Электронная почта</label>
-              <input class="dispatch-icon-email" id="user-dispatch-email" type="text" name="dispatch-email" placeholder="Электронная почта">
+              <label class="visually-hidden" for="dispatch-email">Электронная почта</label>
+              <input class="dispatch-icon" id="dispatch-email" type="text" name="dispatch" placeholder="Электронная почта">
             </p>
             <button class="button" type="submit">Отправить</button>
           </form>
@@ -142,7 +180,28 @@
           (с 10 до 20 ежедневно)
         </p>
         <a class="button feedback-button" href="#" aria-label="Форма обратной связи">Форма обратной связи</a>
+          <section class="modal modal-feedback">
+            <h2 class="visually-hidden">Обратная связь</h2>
+            <p>Мы обязательно вам ответим!</p>
+            <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+              <p>
+                <label class="visually-hidden" for="feedback-name">Ваше имя</label>
+                <input class="icon-name" id="feedback-name" type="text" name="name" placeholder="Как вас зовут?">
+              </p>
+              <p>
+                <label class="visually-hidden" for="feedback-email">Электронная почта</label>
+                <input class="feedback-icon" id="feedback-email" type="text" name="feedback-email" placeholder="Ваша почта для ответа?">
+              </p>
+              <p>
+                <label class="visually-hidden" for="feedback-text">Напишите что-нибудь...</label>
+                <input class="icon-text" id="feedback-text" type="textarea" name="feedback-text" placeholder="Напишите что-нибудь...">
+              </p>
+              <button class="button" type="submit">Отправить</button>
+            </form>
+            <button class="modal-close" type="button">Закрыть</button>
+          </section>
       </section>
+
     </main>
 
     <footer class="main-footer">
@@ -165,56 +224,6 @@
         <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy; 2017</p>
       </div>
     </footer>
-
-    <section class="modal modal-login">
-      <h2 class="visually-hidden">Личный кабинет</h2>
-      <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-        <p>
-          <label class="visually-hidden" for="user-email">Электронная почта</label>
-          <input class="login-icon-email" id="user-email" type="text" name="email" placeholder="Электронная почта">
-        </p>
-        <p>
-          <label class="visually-hidden" for="user-password">Пароль</label>
-          <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
-        </p>
-        <p class="login-password-info">
-          <a class="restore" href="#">Забыли пароль?</a>
-          <a class="new-registration" href="#">Новая регистрация</a>
-        </p>
-        <button class="button" type="submit">Войти</button>
-      </form>
-    </section>
-
-    <section class="modal modal-search">
-      <h2 class="visually-hidden">Поиск</h2>
-      <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-        <p>
-          <label class="visually-hidden" for="site-search">Поиск</label>
-          <input class="icon-search" id="site-search" type="text" name="search" placeholder="Что ищем?">
-        </p>
-    </form>
-    </section>
-
-    <section class="modal modal-feedback">
-      <h2 class="visually-hidden">Обратная связь</h2>
-      <p>Мы обязательно вам ответим!</p>
-      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-        <p>
-          <label class="visually-hidden" for="user-name">Ваше имя</label>
-          <input class="feedback-icon-name" id="user-name" type="text" name="name" placeholder="Как вас зовут?">
-        </p>
-        <p>
-          <label class="visually-hidden" for="user-feedback-email">Электронная почта</label>
-          <input class="feedback-icon-email" id="user-feedback-email" type="text" name="feedback-email" placeholder="Ваша почта для ответа?">
-        </p>
-        <p>
-          <label class="visually-hidden" for="user-feedback">Напишите что-нибудь...</label>
-          <input class="feedback-icon-text" id="user-feedback" type="textarea" name="feedback-text" placeholder="Напишите что-нибудь...">
-        </p>
-        <button class="button" type="submit">Отправить</button>
-      </form>
-      <button class="modal-close" type="button">Закрыть</button>
-    </section>
 
   </body>
 </html>

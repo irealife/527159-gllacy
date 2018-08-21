@@ -10,12 +10,12 @@
         <a class="main-header-logo" href="index.html">
           <img src="img/logo.svg" width="155" height="65" alt="Логотип магазина мороженого">
         </a>
-        <ul class="site-navigation">
-          <li class="site-navigation-current"><a href="catalog.html">Каталог</a>
-            <ul class="site-navigation-item">
-              <li class="site-navigation-news">Новинки</li>
+        <ul class="navigation">
+          <li class="navigation-current"><a href="catalog.html">Каталог</a>
+            <ul class="navigation-item">
+              <li class="navigation-news">Новинки</li>
               <li>Сливочное</li>
-              <li class="site-navigation-item-current">Щербеты</li>
+              <li class="navigation-item-current">Щербеты</li>
               <li>Фруктовый лед</li>
               <li>Мелорин</li>
             </ul>
@@ -24,8 +24,58 @@
           <li><a href="#">О компании</a></li>
         </ul>
         <a class="search" href="#">Поиск</a>
+          <section class="modal modal-search">
+            <h2 class="visually-hidden">Поиск</h2>
+            <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+              <p>
+                <label class="visually-hidden" for="site-search">Поиск</label>
+                <input class="icon-search" id="site-search" type="text" name="search" placeholder="Что ищем?">
+              </p>
+          </form>
+          </section>
         <a class="login-link" href="#">Вход</a>
+          <section class="modal modal-login">
+            <h2 class="visually-hidden">Личный кабинет</h2>
+            <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+              <p>
+                <label class="visually-hidden" for="login-email">Электронная почта</label>
+                <input class="icon-email" id="login-email" type="text" name="email" placeholder="Электронная почта">
+              </p>
+              <p>
+                <label class="visually-hidden" for="login-password">Пароль</label>
+                <input class="icon-password" id="login-password" type="password" name="password" placeholder="Пароль">
+              </p>
+              <p class="password-info">
+                <a class="restore" href="#">Забыли пароль?</a>
+                <a class="new-registration" href="#">Новая регистрация</a>
+              </p>
+              <button class="button" type="submit">Войти</button>
+            </form>
+          </section>
         <a class="basket" href="#">Корзина</a>
+          <section class="modal modal-basketful">
+            <h2 class="visually-hidden">Оформить заказ</h2>
+            <table class="basketful-list">
+              <tr>
+                <td><img src="img/ice-cream-small1.jpg" width="40" height="40" alt="Пломбир с апельсиновым джемом"></td>
+                <td><p>Пломбир с апельсиновым джемом</p></td>
+                <td><p>1,5 кг &times;</p></td>
+                <td><p class="basketful-piece">200 руб.</p></td>
+                <td><p>300 руб.</p></td>
+              </tr>
+              <tr>
+                <td><img src="img/ice-cream-small2.jpg" width="40" height="40" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
+                <td><p>Клубничный пломбир с присыпкой из белого шоколада</p></td>
+                <td><p>1,5 кг &times;</p></td>
+                <td><p class="basketful-piece">200 руб.</p></td>
+                <td><p>300 руб.</p></td>
+              </tr>
+              <tr>
+                <td colspan="5">Итого: 750 руб.</td>
+              </tr>
+            </table>
+            <a class="button button-basket">Оформить заказ</span>
+          </section>
       </nav>
       <p class="timetable">
         С 10 до 20, ежедневно
@@ -47,7 +97,7 @@
           <fieldset>
             <legend>Сортировка:</legend>
             <select class="sorting-list">
-              <option class="sorting-item sorting-item-active" value="по популярности">
+              <option class="sorting-item sorting-active" value="по популярности">
                 по популярности
               </option>
               <option class="sorting-item" value="сначала недорогие">
@@ -72,28 +122,28 @@
                 <input class="visually-hidden fat-input fat-input-radio" type="radio" name="fat-group" value="zero" id="filter-zero">
                 <label for="filter-zero">0%</label>
               </li>
-              <li class="fat-item fat-item-active">
-                <input class="visually-hidden fat-input fat-input-radio" type="radio" name="fat-group" value="to-ten" id="filter-to-ten" checked>
-                <label for="filter-to-ten">до 10%</label>
+              <li class="fat-item fat-active">
+                <input class="visually-hidden fat-input fat-input-radio" type="radio" name="fat-group" value="ten" id="filter-ten" checked>
+                <label for="filter-ten">до 10%</label>
               </li>
               <li class="fat-item">
-                <input class="visually-hidden fat-input fat-input-radio" type="radio" name="fat-group" value="to-thirty" id="filter-to-thirty">
-                <label for="filter-to-thirty">до 30%</label>
+                <input class="visually-hidden fat-input fat-input-radio" type="radio" name="fat-group" value="thirty" id="filter-thirty">
+                <label for="filter-thirty">до 30%</label>
               </li>
               <li class="fat-item">
-                <input class="visually-hidden fat-input fat-input-radio" type="radio" name="fat-group" value="above-thirty" id="filter-above-thirty">
-                <label for="filter-above-thirty">выше 30%</label>
+                <input class="visually-hidden fat-input fat-input-radio" type="radio" name="fat-group" value="above" id="filter-above">
+                <label for="filter-above">выше 30%</label>
               </li>
             </ul>
           </fieldset>
           <fieldset>
             <legend>Наполнители:</legend>
             <ul class="extender-list">
-              <li class="extender-item extender-item-active">
+              <li class="extender-item extender-active">
                 <input class="visually-hidden extender-input extender-input-checkbox" type="checkbox" name="chocolate" id="filter-chocolate" checked>
                 <label for="filter-chocolate">шоколадные</label>
               </li>
-              <li class="extender-item extender-item-active">
+              <li class="extender-item extender-active">
                 <input class="visually-hidden extender-input extender-input-checkbox" type="checkbox" name="sugar" id="filter-sugar" checked>
                 <label for="filter-sugar">сахарные присыпки</label>
               </li>
@@ -132,6 +182,13 @@
             <img src="img/ice-cream3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
             <p>355&#8381;<span>&frasl;кг</span></p>
             <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+              <section class="hover-product">
+                <h2 class="visually-hidden">Карточка товара</h2>
+                <h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>
+                <img src="img/ice-cream3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+                <p>355&#8381;<span>&frasl;кг</span></p>
+                <a class="button button-product" href="#">Быстрый просмотр</a>
+              </section>
           </li>
           <li class="catalog-item">
             <img src="img/ice-cream4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
@@ -181,7 +238,7 @@
         </ul>
 
         <ul class="pagination-list">
-          <li class="pagination-item pagination-item-current"><a>1</a></li>
+          <li class="pagination-item pagination-current"><a>1</a></li>
           <li class="pagination-item"><a href="#">2</a></li>
           <li class="pagination-item"><a href="#">3</a></li>
           <li class="pagination-item"><a href="#">4</a></li>
@@ -210,67 +267,6 @@
         <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy; 2017</p>
       </div>
     </footer>
-
-    <section class="modal modal-login">
-      <h2 class="visually-hidden">Личный кабинет</h2>
-      <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-        <p>
-          <label class="visually-hidden" for="user-email">Электронная почта</label>
-          <input class="login-icon-email" id="user-email" type="text" name="email" placeholder="Электронная почта">
-        </p>
-        <p>
-          <label class="visually-hidden" for="user-password">Пароль</label>
-          <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
-        </p>
-        <p class="login-password-info">
-          <a class="restore" href="#">Забыли пароль?</a>
-          <a class="new-registration" href="#">Новая регистрация</a>
-        </p>
-        <button class="button" type="submit">Войти</button>
-      </form>
-    </section>
-
-    <section class="modal modal-search">
-      <h2 class="visually-hidden">Поиск</h2>
-      <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-        <p>
-          <label class="visually-hidden" for="site-search">Поиск</label>
-          <input class="icon-search" id="site-search" type="text" name="search" placeholder="Что ищем?">
-        </p>
-    </form>
-    </section>
-
-    <section class="modal modal-basketful">
-      <h2 class="visually-hidden">Оформить заказ</h2>
-      <table class="modal-basketful-list">
-        <tr>
-          <td><img src="img/ice-cream-small1.jpg" width="40" height="40" alt="Пломбир с апельсиновым джемом"></td>
-          <td><p>Пломбир с апельсиновым джемом</p></td>
-          <td><p>1,5 кг &times;</p></td>
-          <td><p class="modal-basketful-piece">200 руб.</p></td>
-          <td><p>300 руб.</p></td>
-        </tr>
-        <tr>
-          <td><img src="img/ice-cream-small2.jpg" width="40" height="40" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
-          <td><p>Клубничный пломбир с присыпкой из белого шоколада</p></td>
-          <td><p>1,5 кг &times;</p></td>
-          <td><p class="modal-basketful-piece">200 руб.</p></td>
-          <td><p>300 руб.</p></td>
-        </tr>
-        <tr>
-          <td colspan="5">Итого: 750 руб.</td>
-        </tr>
-      </table>
-      <a class="button button-basket">Оформить заказ</span>
-    </section>
-
-    <section class="hover-product">
-      <h2 class="visually-hidden">Карточка товара</h2>
-      <h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>
-      <img src="img/ice-cream3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
-      <p>355&#8381;<span>&frasl;кг</span></p>
-      <a class="button button-product" href="#">Быстрый просмотр</a>
-    </section>
 
   </body>
 </html>
