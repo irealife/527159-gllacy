@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -13,11 +16,11 @@
         <ul class="navigation">
           <li class="navigation-current"><a href="catalog.html">Каталог</a>
             <ul class="navigation-item">
-              <li class="navigation-news">Новинки</li>
-              <li>Сливочное</li>
-              <li class="navigation-item-current">Щербеты</li>
-              <li>Фруктовый лед</li>
-              <li>Мелорин</li>
+              <li class="navigation-news"><a href="#">Новинки</a></li>
+              <li><a href="#">Сливочное</a></li>
+              <li class="navigation-item-current"><a href="#">Щербеты</a></li>
+              <li><a href="#">Фруктовый лед</a></li>
+              <li><a href="#">Мелорин</a></li>
             </ul>
           </li>
           <li><a href="#">Доставка и оплата</a></li>
@@ -49,14 +52,14 @@
                 <a class="restore" href="#">Забыли пароль?</a>
                 <a class="new-registration" href="#">Новая регистрация</a>
               </p>
-              <button class="button" type="submit">Войти</button>
+              <button class="login-button" type="submit">Войти</button>
             </form>
           </section>
         <a class="basket" href="#">Корзина</a>
       </nav>
       <p class="timetable">
         С 10 до 20, ежедневно
-        8 812 450-25-25
+        <span>8 812 450-25-25</span>
       </p>
     </header>
 
@@ -154,7 +157,7 @@
           <form class="dispatch-form" action="https://echo.htmlacademy.ru" method="post">
             <p>
               <label class="visually-hidden" for="dispatch-email">Электронная почта</label>
-              <input class="dispatch-icon" id="dispatch-email" type="text" name="dispatch" placeholder="Электронная почта">
+              <input class="dispatch-icon" id="dispatch-email" type="text" name="email" placeholder="Электронная почта">
             </p>
             <button class="button" type="submit">Отправить</button>
           </form>
@@ -186,15 +189,15 @@
             <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
               <p>
                 <label class="visually-hidden" for="feedback-name">Ваше имя</label>
-                <input class="icon-name" id="feedback-name" type="text" name="name" placeholder="Как вас зовут?">
+                <input class="icon-name" id="feedback-name" type="text" name="user-name" placeholder="Как вас зовут?">
               </p>
               <p>
                 <label class="visually-hidden" for="feedback-email">Электронная почта</label>
-                <input class="feedback-icon" id="feedback-email" type="text" name="feedback-email" placeholder="Ваша почта для ответа?">
+                <input class="feedback-icon" id="feedback-email" type="text" name="email" placeholder="Ваша почта для ответа?">
               </p>
               <p>
                 <label class="visually-hidden" for="feedback-text">Напишите что-нибудь...</label>
-                <input class="icon-text" id="feedback-text" type="textarea" name="feedback-text" placeholder="Напишите что-нибудь...">
+                <input class="icon-text" id="feedback-text" type="textarea" name="word" placeholder="Напишите что-нибудь...">
               </p>
               <button class="button" type="submit">Отправить</button>
             </form>
