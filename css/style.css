@@ -1,0 +1,428 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+
+  background-color: #849d8f;
+}
+
+a {
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  text-decoration: underline;
+  text-decoration-color: rgba(255,255,255,0.3);
+}
+
+a:hover,
+a:active {
+  color: #ffbc9e;
+  text-decoration: underline;
+  text-decoration-color: rgba(255,188,158,0.3);
+}
+
+.main-navigation {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: bold;
+  color: #ffffff;
+
+  background-color: #849d8f;
+}
+
+.navigation,
+.navigation-item {
+  list-style: none;
+}
+
+.navigation-item {
+  background-color: #f8f7f4;
+}
+
+.navigation a:hover {
+  color: #333333;
+  text-decoration: none;
+
+  background-color: #f7f6f3;
+}
+
+.navigation a:active {
+  color: #333333;
+  text-decoration: none;
+
+  background-color: #f8f7f4;
+}
+
+.navigation .navigation-current {
+  color: #ffffff;
+
+  background-color: #d07058;
+}
+
+.navigation-item a,
+.navigation-news a {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: normal;
+  color: #323232;
+}
+
+.navigation-item a:hover {
+  background-color: #fbded7;
+}
+
+.navigation-item a:active {
+  background-color: #f6b5a5;
+}
+
+.navigation-item .navigation-item-current {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: normal;
+  color: #ffffff;
+
+  background-color: #d07058;
+}
+
+.navigation-news a {
+  font-weight: bold;
+}
+
+.timetable {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.timetable span {
+  font-size: 22px;
+  line-height: 24px;
+}
+
+.button {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+
+  background-color: #ec593c;
+}
+
+.button:hover {
+  color: #ffffff;
+  text-decoration: none;
+
+  background-color: #f17f65;
+}
+
+.button:active {
+  color: #ffffff;
+  text-decoration: none;
+
+  background-color: #dd563a;
+}
+
+.slide-text {
+  font-size: 60px;
+  line-height: 60.35px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.slide-show-button {
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.stock-list {
+  list-style: none;
+}
+
+.stock-item {
+  width: 560px;
+  min-height: 230px;
+}
+
+.raspberries {
+  background-color: #862944;
+  background-image: url("../img/raspberries.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.chokolate {
+  background-color: #21120e;
+  background-image: url("../img/chokolate.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.stock-text {
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.stock-item p {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.hit-list,
+.catalog-list {
+  list-style: none;
+}
+
+.hit-item img,
+.basketful-list img,
+.catalog-list img {
+  border-radius: 50%;
+}
+
+.hit-item p,
+.catalog-item p {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.hit-item span,
+.catalog-item span {
+  font-size: 30px;
+}
+
+.info {
+  width: 1146px;
+  min-height: 305px;
+
+  background-color: #ecdec3;
+  background-image: url("../img/background-wafer.jpg");
+  background-repeat: repeat;
+}
+
+.info-content {
+  font-size: 24px;
+  line-height: 30px;
+  color: #323232;
+}
+
+.info-list {
+  list-style: none;
+}
+
+.info-item {
+  color: #323232;
+}
+
+.blog-news {
+  width: 560px;
+  min-height: 220px;
+
+  background-color: #ffffff;
+  background-image: url("../img/background-strawberry.jpg");
+  background-repeat: no-repeat;
+}
+
+.blog-news h3 {
+  color: #323232;
+}
+
+.blog-news a {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #323232;
+  text-decoration: underline;
+}
+
+.blog-news a:hover,
+.blog-news a:active {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #e84d37;
+  text-decoration: underline;
+  text-decoration-color: rgba(232,77,55,0.3);
+}
+
+.blog-dispatch {
+  width: 560px;
+  min-height: 220px;
+
+  background-color: #f8f7f4;
+  background-image: url("../img/bg-post.svg");
+
+}
+
+.blog-dispatch p {
+  color: #5a5a5a;
+}
+
+.address p {
+  font-size: 14px;
+  line-height: 20px;
+  color: #323232;
+}
+
+.address span {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #323232;
+}
+
+.breadcrumbs {
+  list-style: none;
+}
+
+.filter legend {
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+}
+
+.filter input[type="range"],
+.fat-list,
+.extender-list {
+  list-style: none;
+
+  background-color: rgba(248,247,244,0.2);
+}
+
+.sorting-list {
+  color: #ffffff;
+
+  background-color: rgba(248,247,244,0.2);
+}
+
+.filter-button {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: lighter;
+  color: #ffffff;
+
+  background-color: rgba(248,247,244,0.2);
+  border: 2px solid #ffffff;
+}
+
+.filter-button:hover {
+  color: #323232;
+
+  background-color: #ffffff;
+}
+
+.filter-button:active {
+  color: #323232;
+
+  background-color: #ededed;
+}
+
+.hover-product {
+  background-color: rgba(248,247,244,0.2);
+}
+
+.pagination-list {
+  list-style: none;
+}
+
+/* Модальные окна */
+
+.modal-feedback p {
+  font-size: 24px;
+  line-height: 28px;
+  color: #323232;
+}
+
+.feedback-form p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #999999;
+}
+
+.modal {
+  background-color: #f8f7f4;
+}
+
+.login-form input,
+.search-form input,
+.dispatch-form input,
+.feedback-form input {
+  font-size: 14px;
+  line-height: 24px;
+  color: #999999;
+
+  background-color: #ffffff;
+  border: 1px solid #d3d3d2;
+}
+
+.login-form input:hover,
+.search-form input:hover,
+.dispatch-form input:hover,
+.feedback-form input:hover {
+  border: 2px solid #9a9a9a;
+}
+
+.login-form input:focus,
+.search-form input:focus,
+.dispatch-form input:focus,
+.feedback-form input:focus {
+  border: 2px solid #2e88e4;
+}
+
+.password-info a {
+  font-size: 13px;
+  line-height: 24px;
+  color: #323232;
+  text-decoration: underline;
+}
+
+.password-info a:hover,
+.password-info a:active {
+  color: #e84d37;
+  text-decoration: underline;
+  text-decoration-color: rgba(232,77,55,0.3);
+}
+
+.basketful-list p {
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: lighter;
+  color: #323232;
+}
+
+.basketful-list span {
+  color: #999999;
+}
+
+.total {
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: bold;
+  color: #323232;
+
+  text-align: right;
+}
+
+/* Футер */
+
+.footer-social {
+  list-style: none;
+}
+
+.social-button {
+  color: #ffffff;
+}
+
+.footer-menu {
+  list-style: none;
+}
