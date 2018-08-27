@@ -7,7 +7,7 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="inner-page">
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo" href="index.html">
@@ -79,22 +79,24 @@
                 <td colspan="5" class="total">Итого: 750 руб.</td>
               </tr>
             </table>
-            <a class="button button-basket">Оформить заказ</span>
+            <a class="button button-basket">Оформить заказ</a>
           </section>
       </nav>
       <p class="timetable">
         С 10 до 20, ежедневно
-        8 812 450-25-25
+        <span>8 812 450-25-25</span>
       </p>
     </header>
 
     <main class="container">
-      <h1 class="visually-hidden">Сливочное мороженое</h1>
-      <ul class="breadcrumbs">
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="catalog.html">Каталог</a></li>
-        <li class="breadcrumbs-current">Сливочное</li>
-      </ul>
+      <div class="page-navigation">
+        <h1 class="page-title">Сливочное мороженое</h1>
+        <ul class="breadcrumbs">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li class="breadcrumbs-current">Сливочное</li>
+        </ul>
+      </div>
 
       <section class="filters">
         <h2 class="visually-hidden">Фильтр мороженого</h2>
@@ -187,13 +189,6 @@
             <img src="img/ice-cream3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
             <p>355&#8381;<span>&frasl;кг</span></p>
             <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
-              <section class="hover-product">
-                <h2 class="visually-hidden">Карточка товара</h2>
-                <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
-                <img src="img/ice-cream3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
-                <p>355&#8381;<span>&frasl;кг</span></p>
-                <a class="button button-product" href="#">Быстрый просмотр</a>
-              </section>
           </li>
           <li class="catalog-item">
             <img src="img/ice-cream4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
@@ -242,6 +237,14 @@
           </li>
         </ul>
 
+        <section class="hover-product">
+          <h2 class="visually-hidden">Карточка товара</h2>
+          <img src="img/ice-cream3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+          <p>355&#8381;<span>&frasl;кг</span></p>
+          <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+          <a class="button button-product" href="#">Быстрый просмотр</a>
+        </section>
+
         <ul class="pagination-list">
           <li class="pagination-item pagination-current"><a>1</a></li>
           <li class="pagination-item"><a href="#">2</a></li>
@@ -253,23 +256,25 @@
     </main>
 
     <footer class="main-footer">
-      <ul class="footer-social">
-        <li><a class="social-button" href="#" aria-label="Читайте нас на Твиттере">twitter</a></li>
-        <li><a class="social-button" href="#" aria-label="Читайте нас в Инстаграм">instagram</a></li>
-        <li><a class="social-button" href="#" aria-label="Читайте нас на Фейсбуке">facebook</a></li>
-        <li><a class="social-button" href="#" aria-label="Читайте нас Вконтакте">vkontakte</a></li>
-      </ul>
-      <ul class="footer-menu">
-        <li><a href="#" aria-label="Для поставщиков">Для поставщиков</a></li>
-        <li><a href="#" aria-label="О производстве">О производстве</a></li>
-        <li><a href="#" aria-label="Наши документы">Наши документы</a></li>
-        <li><a href="#" aria-label="Экологические стандарты">Экологические стандарты</a></li>
-      </ul>
-      <div class="copyright">
-        <a class="footer-logo" href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="img/logo-htmlacademy.svg" width="110" height="40" alt="Логотип HTML Academy">
-        </a>
-        <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy; 2017</p>
+      <div class="container">
+        <ul class="footer-social">
+          <li><a class="social-button" href="#" aria-label="Читайте нас на Твиттере">twitter</a></li>
+          <li><a class="social-button" href="#" aria-label="Читайте нас в Инстаграм">instagram</a></li>
+          <li><a class="social-button" href="#" aria-label="Читайте нас на Фейсбуке">facebook</a></li>
+          <li><a class="social-button" href="#" aria-label="Читайте нас Вконтакте">vkontakte</a></li>
+        </ul>
+        <ul class="footer-menu">
+          <li><a class="footer-current" href="#" aria-label="Для поставщиков">Для поставщиков</a></li>
+          <li><a href="#" aria-label="О производстве">О производстве</a></li>
+          <li><a href="#" aria-label="Наши документы">Наши документы</a></li>
+          <li><a href="#" aria-label="Экологические стандарты">Экологические стандарты</a></li>
+        </ul>
+        <div class="copyright">
+          <a class="footer-logo" href="https://htmlacademy.ru/intensive/htmlcss">
+            <img src="img/logo-htmlacademy.svg" width="110" height="40" alt="Логотип HTML Academy">
+          </a>
+          <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy; 2017</p>
+        </div>
       </div>
     </footer>
 
