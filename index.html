@@ -20,12 +20,13 @@
             </a>
             <ul class="navigation">
               <li><a href="catalog.html">Каталог</a>
-                <ul class="navigation-item">
+                <!-- замена navigation-item на navigation-list, а navigation-item присвоим лишкам -->
+                <ul class="navigation-list">
                   <li class="navigation-news"><a href="#">Новинки</a></li>
-                  <li><a href="#">Сливочное</a></li>
-                  <li><a href="#">Щербеты</a></li>
-                  <li><a href="#">Фруктовый лед</a></li>
-                  <li><a href="#">Мелорин</a></li>
+                  <li class="navigation-item .navigation-item-current"><a href="#">Сливочное</a></li>
+                  <li class="navigation-item"><a href="#">Щербеты</a></li>
+                  <li class="navigation-item"><a href="#">Фруктовый лед</a></li>
+                  <li class="navigation-item"><a href="#">Мелорин</a></li>
                 </ul>
               </li>
               <li><a href="#">Доставка и оплата</a></li>
@@ -33,34 +34,34 @@
             </ul>
             <div class="user-navigation">
               <a class="search" href="#"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17"><path fill="#fff" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/></svg></a>
-                <!-- класс visually-hidden ВРЕМЕННО -->
-                <section class="modal modal-search visually-hidden">
+                <section class="modal modal-search">
                   <h2 class="visually-hidden">Поиск</h2>
                   <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
                     <p>
                       <label class="visually-hidden" for="site-search">Поиск</label>
-                      <input class="icon-search" id="site-search" type="text" name="search" placeholder="Что ищем?">
+                      <input class="text-search" id="site-search" type="text" name="search" placeholder="Что ищем?">
                     </p>
                   </form>
                 </section>
               <a class="login-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19" viewBox="0 0 21 19"><g fill="#000"><path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/><path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/></g></svg>Вход</a>
-                <!-- класс visually-hidden ВРЕМЕННО -->
-                <section class="modal modal-login visually-hidden">
+                <section class="modal modal-login">
                   <h2 class="visually-hidden">Личный кабинет</h2>
                   <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
                     <p>
                       <label class="visually-hidden" for="login-email">Электронная почта</label>
-                      <input class="icon-email" id="login-email" type="text" name="email" placeholder="Электронная почта">
+                      <input class="entrance-email" id="login-email" type="text" name="email" placeholder="Электронная почта">
                     </p>
                     <p>
                       <label class="visually-hidden" for="login-password">Пароль</label>
-                      <input class="icon-password" id="login-password" type="password" name="password" placeholder="Пароль">
+                      <input class="entrance-password" id="login-password" type="password" name="password" placeholder="Пароль">
                     </p>
-                    <p class="password-info">
-                      <a class="restore" href="#">Забыли пароль?</a>
-                      <a class="new-registration" href="#">Новая регистрация</a>
-                    </p>
-                    <button class="button login-button" type="submit">Войти</button>
+                    <div class="registration">
+                      <p class="password-info">
+                        <a class="restore" href="#">Забыли пароль?</a>
+                        <a class="new-registration" href="#">Новая регистрация</a>
+                      </p>
+                      <button class="button login-button" type="submit">Войти</button>
+                    </div>
                   </form>
                 </section>
               <a class="basket" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20"><g fill="#FFF"><path d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"/><circle cx="6.984" cy="18" r="2"/><circle cx="15.984" cy="18" r="2"/></g></svg>Пусто</a>
@@ -188,24 +189,23 @@
                   (с 10 до 20 ежедневно)
                 </p>
                 <a class="button feedback-button" href="#" aria-label="Форма обратной связи">Форма обратной связи</a>
-                  <!-- класс visually-hidden ВРЕМЕННО -->
-                  <section class="modal modal-feedback visually-hidden">
+                  <section class="modal modal-feedback">
                     <h2 class="visually-hidden">Обратная связь</h2>
                     <p>Мы обязательно вам ответим!</p>
                     <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
                       <p>
                         <label class="visually-hidden" for="feedback-name">Ваше имя</label>
-                        <input class="icon-name active" id="feedback-name" type="text" name="user-name" placeholder="Как вас зовут?">
+                        <input class="name-feedback active" id="feedback-name" type="text" name="user-name" placeholder="Как вас зовут?">
                       </p>
                       <p>
                         <label class="visually-hidden" for="feedback-email">Электронная почта</label>
-                        <input class="feedback-icon" id="feedback-email" type="text" name="email" placeholder="Ваша почта для ответа?">
+                        <input class="email-feedback" id="feedback-email" type="text" name="email" placeholder="Ваша почта для ответа?">
                       </p>
                       <p>
                         <label class="visually-hidden" for="feedback-text">Напишите что-нибудь...</label>
-                        <input class="icon-text" id="feedback-text" type="textarea" name="word" placeholder="Напишите что-нибудь...">
+                        <input class="text-feedback" id="feedback-text" type="textarea" name="word" placeholder="Напишите что-нибудь...">
                       </p>
-                      <button class="button" type="submit">Отправить</button>
+                      <button class="button feedback-button-form" type="submit">Отправить</button>
                     </form>
                     <button class="modal-close" type="button">Закрыть</button>
                   </section>
