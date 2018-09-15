@@ -792,6 +792,12 @@ input[type="radio"].visually-hidden {
   margin-left: -27px;
 }
 
+.map iframe {
+  position: relative;
+
+  border: none;
+}
+
 .map::before {
   content: "";
 
@@ -805,6 +811,8 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/pin.png");
   background-repeat: no-repeat;
   background-position: 0 0;
+
+  z-index: 1;
 }
 
 .address {
@@ -819,6 +827,8 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
 
   border-radius: 10px;
+
+  z-index: 3;
 }
 
 .address p {
@@ -1297,7 +1307,7 @@ background-color: #ffffff;
   margin-left: 0px;
 }
 
-/* Модальные окна */
+/* Модальные окна и попапы*/
 
 @keyframes bounce {
   0% {
@@ -1375,7 +1385,7 @@ background-color: #ffffff;
   width: 428px;
   padding: 25px;
   padding-top: 17px;
-  margin-left: -196px;
+  margin-left: -230px;
   border-radius: 10px;
 }
 
@@ -1423,14 +1433,18 @@ background-color: #ffffff;
 
 .modal-search {
   position: absolute;
-  top: 60px;
-  right: 208px;
+  top: 36px;
+  right: 0px;
 
   display: none;
 
   padding: 4px 15px;
   border-radius: 5px;
   z-index: 1;
+}
+
+.search:hover .modal-search {
+  display: block;
 }
 
 .text-search {
@@ -1454,6 +1468,10 @@ background-color: #ffffff;
   padding: 4px 19px;
   border-radius: 5px;
   z-index: 1;
+}
+
+.login-link:hover .modal-login {
+  display: block;
 }
 
 .entrance-email,
@@ -1566,6 +1584,10 @@ background-color: #ffffff;
 
   border-radius: 5px;
   z-index: 1;
+}
+
+.basket-product:hover .modal-basketful {
+  display: block;
 }
 
 .basketful-list {
