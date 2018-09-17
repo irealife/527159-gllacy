@@ -29,7 +29,8 @@
             <li><a class="navigation-link" href="#">О компании</a></li>
           </ul>
           <div class="user-navigation">
-            <a class="search" href="#"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17"><path fill="#fff" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/></svg>
+            <div class="search-block">
+              <a class="search" href="#"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17"><path fill="#fff" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/></svg></a>
               <section class="modal modal-search">
                 <h2 class="visually-hidden">Поиск</h2>
                 <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
@@ -39,56 +40,58 @@
                   </p>
                 </form>
               </section>
-            </a>
-            <a class="login-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19" viewBox="0 0 21 19"><g fill="#000"><path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/><path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/></g></svg>Вход
-              <section class="modal modal-login">
-                <h2 class="visually-hidden">Личный кабинет</h2>
-                <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-                  <p>
-                    <label class="visually-hidden" for="login-email">Электронная почта</label>
-                    <input class="entrance-email" id="login-email" type="text" name="email" placeholder="Электронная почта">
-                  </p>
-                  <p>
-                    <label class="visually-hidden" for="login-password">Пароль</label>
-                    <input class="entrance-password" id="login-password" type="password" name="password" placeholder="Пароль">
-                  </p>
-                  <div class="registration">
-                    <p class="password-info">
-                      <a class="restore" href="#">Забыли пароль?</a>
-                      <a class="new-registration" href="#">Новая регистрация</a>
+            </div>
+            <div class="login-block">
+              <a class="login-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19" viewBox="0 0 21 19"><g fill="#000"><path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/><path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/></g></svg>Вход</a>
+                <section class="modal modal-login">
+                  <h2 class="visually-hidden">Личный кабинет</h2>
+                  <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+                    <p>
+                      <label class="visually-hidden" for="login-email">Электронная почта</label>
+                      <input class="entrance-email" id="login-email" type="text" name="email" placeholder="Электронная почта">
                     </p>
-                    <button class="button login-button" type="submit">Войти</button>
-                  </div>
-                </form>
-              </section>
-            </a>
-            <a class="basket-product" href="#">2 товара
-              <section class="modal modal-basketful">
-                <h2 class="visually-hidden">Оформить заказ</h2>
-                <table class="basketful-list">
-                  <tr>
-                    <td class="cross"><img src="img/cross-big.svg" width="11" height="11" alt="удалить из корзины"></td>
-                    <td class="icon-icecream"><img src="img/ice-cream-small1.jpg" width="40" height="40" alt="Пломбир с апельсиновым джемом"></td>
-                    <td class="name-icecream"><p>Пломбир с апельсиновым джемом</p></td>
-                    <td class="weight-icecream"><p>1,5 кг &times;</p></td>
-                    <td class="price-icecream"><p class="basketful-piece">200 руб.</p></td>
-                    <td class="total-icecream"><p>300 руб.</p></td>
-                  </tr>
-                  <tr>
-                    <td class="cross"><img src="img/cross-big.svg" width="11" height="11" alt="удалить из корзины"></td>
-                    <td class="icon-icecream"><img src="img/ice-cream-small2.jpg" width="40" height="40" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
-                    <td class="name-icecream"><p>Клубничный пломбир с присыпкой из белого шоколада</p></td>
-                    <td class="weight-icecream"><p>1,5 кг &times;</p></td>
-                    <td class="price-icecream"><p class="basketful-piece">300 руб.</p></td>
-                    <td class="total-icecream"><p>450 руб.</p></td>
-                  </tr>
-                  <tr>
-                    <td class="total" colspan="6">Итого: 750 руб.</td>
-                  </tr>
-                </table>
-                <a class="button button-basket">Оформить заказ</a>
-              </section>
-            </a>
+                    <p>
+                      <label class="visually-hidden" for="login-password">Пароль</label>
+                      <input class="entrance-password" id="login-password" type="password" name="password" placeholder="Пароль">
+                    </p>
+                    <div class="registration">
+                      <p class="password-info">
+                        <a class="restore" href="#">Забыли пароль?</a>
+                        <a class="new-registration" href="#">Новая регистрация</a>
+                      </p>
+                      <button class="button login-button" type="submit">Войти</button>
+                    </div>
+                  </form>
+                </section>
+            </div>
+            <div class="basket-block">
+              <a class="basket-product" href="#">2 товара</a>
+                <section class="modal modal-basketful">
+                  <h2 class="visually-hidden">Оформить заказ</h2>
+                  <table class="basketful-list">
+                    <tr>
+                      <td class="cross"><img src="img/cross-big.svg" width="11" height="11" alt="удалить из корзины"></td>
+                      <td class="icon-icecream"><img src="img/ice-cream-small1.jpg" width="40" height="40" alt="Пломбир с апельсиновым джемом"></td>
+                      <td class="name-icecream"><p>Пломбир с апельсиновым джемом</p></td>
+                      <td class="weight-icecream"><p>1,5 кг &times;</p></td>
+                      <td class="price-icecream"><p class="basketful-piece">200 руб.</p></td>
+                      <td class="total-icecream"><p>300 руб.</p></td>
+                    </tr>
+                    <tr>
+                      <td class="cross"><img src="img/cross-big.svg" width="11" height="11" alt="удалить из корзины"></td>
+                      <td class="icon-icecream"><img src="img/ice-cream-small2.jpg" width="40" height="40" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
+                      <td class="name-icecream"><p>Клубничный пломбир с присыпкой из белого шоколада</p></td>
+                      <td class="weight-icecream"><p>1,5 кг &times;</p></td>
+                      <td class="price-icecream"><p class="basketful-piece">300 руб.</p></td>
+                      <td class="total-icecream"><p>450 руб.</p></td>
+                    </tr>
+                    <tr>
+                      <td class="total" colspan="6">Итого: 750 руб.</td>
+                    </tr>
+                  </table>
+                  <a class="button button-basket">Оформить заказ</a>
+                </section>
+            </div>
           </div>
         </nav>
         <p class="timetable">

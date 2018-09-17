@@ -351,49 +351,116 @@ input[type="radio"].visually-hidden {
   flex-wrap: nowrap;
   max-width: 300px;
   margin-left: auto;
-  padding-top: 13px;
-  height: 32px;
 }
 
-.user-navigation a {
+.login-block,
+.basket-block {
+  margin-left: 12px;
+  margin-top: 18px;
+  margin-right: 2px;
+}
+
+.search-block {
+  margin-top: 13px;
+}
+
+.search,
+.login-link,
+.basket,
+.basket-product {
+  font-size: 13px;
   color: #ffffff;
   text-decoration: none;
   background-color: rgba(255,255,255,0.2);
 
   margin: 0;
-  margin-left: 10px;
-  padding-top: 6px;
-  padding-right: 18px;
+  padding: 0;
   border-radius: 30px;
 }
 
-.user-navigation a:hover,
-.user-navigation a:focus {
+.search:hover,
+.search:focus,
+.login-link:hover,
+.login-link:focus,
+.basket:hover,
+.basket:focus {
   color: #000000;
   background-color: #f8f7f4;
+  text-decoration: none;
 }
 
 .search {
   position: relative;
-  margin-left: auto;
-  padding: 16px;
+  padding-top: 3px;
+  padding-right: 28px;
+  padding-left: 3px;
+  padding-bottom: 13px;
 }
 
 .search svg {
   position: absolute;
-  top: 7px;
+  top: 8px;
   left: 8px;
 }
 
-.login-link,
-.basket {
-  display: flex;
-  padding-left: 10px;
+.login-link {
+  position: relative;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 16px;
+  padding-left: 43px;
 }
 
-.login-link svg,
+.login-link svg {
+  position: absolute;
+  left: 15px;
+}
+
+.basket {
+  position: relative;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 16px;
+  padding-left: 43px;
+}
+
 .basket svg {
-  padding-right: 4px;
+  position: absolute;
+  left: 15px;
+}
+
+.basket-product {
+  position: relative;
+
+  font-size: 13px;
+
+  color: #000000;
+  background-color: #f8f7f4;
+
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 16px;
+  padding-left: 44px;
+}
+
+.basket-product::after {
+  content: "";
+
+  width: 21px;
+  height: 20px;
+
+  position: absolute;
+  top: 5px;
+  left: 12px;
+  background-image: url("../img/basket-red.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.basket-product:hover,
+.basket-product:focus {
+  color: #000000;
+  text-decoration: none;
 }
 
 .login-link g,
@@ -796,9 +863,13 @@ input[type="radio"].visually-hidden {
   position: relative;
 
   border: none;
+
+  background-image: url("../img/map.jpg");
+  width: 1200px;
+  height: 430px;
 }
 
-.map::before {
+/* .map::before {
   content: "";
 
   position: absolute;
@@ -813,7 +884,7 @@ input[type="radio"].visually-hidden {
   background-position: 0 0;
 
   z-index: 1;
-}
+} */
 
 .address {
   max-width: 252px;
@@ -1433,8 +1504,8 @@ background-color: #ffffff;
 
 .modal-search {
   position: absolute;
-  top: 36px;
-  right: 0px;
+  top: 59px;
+  right: 211px;
 
   display: none;
 
@@ -1443,7 +1514,7 @@ background-color: #ffffff;
   z-index: 1;
 }
 
-.search:hover .modal-search {
+.search-block:hover .modal-search {
   display: block;
 }
 
@@ -1470,7 +1541,7 @@ background-color: #ffffff;
   z-index: 1;
 }
 
-.login-link:hover .modal-login {
+.login-block:hover .modal-login {
   display: block;
 }
 
@@ -1546,30 +1617,6 @@ background-color: #ffffff;
   border: 2px solid #2e88e4;
 }
 
-.user-navigation .basket-product {
-  font-size: 13px;
-  padding-top: 7px;
-  padding-left: 45px;
-
-  color: #000000;
-  background-color: #f8f7f4;
-  position: relative;
-}
-
-.user-navigation .basket-product::after {
-  content: "";
-
-  width: 21px;
-  height: 20px;
-
-  position: absolute;
-  top: 7px;
-  left: 14px;
-  background-image: url("../img/basket-red.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-
 .modal-basketful {
   position: absolute;
 
@@ -1586,7 +1633,7 @@ background-color: #ffffff;
   z-index: 1;
 }
 
-.basket-product:hover .modal-basketful {
+.basket-block:hover .modal-basketful {
   display: block;
 }
 
