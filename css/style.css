@@ -367,10 +367,12 @@ input[type="radio"].visually-hidden {
   margin-left: 12px;
   margin-top: 18px;
   margin-right: 2px;
+  padding-bottom: 14px;
 }
 
 .search-block {
   margin-top: 13px;
+  padding-bottom: 14px;
 }
 
 .search,
@@ -384,6 +386,7 @@ input[type="radio"].visually-hidden {
 
   margin: 0;
   padding: 0;
+  margin-bottom: 7px;
   border-radius: 30px;
 }
 
@@ -580,7 +583,10 @@ input[type="radio"].visually-hidden {
 }
 
 .hit {
-  margin-bottom: 39px;
+  width: 1164px;
+  margin-bottom: -14px;
+  margin-top: -10px;
+  margin-left: -9px;
 }
 
 .hit-list {
@@ -595,19 +601,12 @@ input[type="radio"].visually-hidden {
   padding: 0;
 }
 
-.hit-item {
-  max-width: 267px;
-  min-height: 323px;
-
-  position: relative;
-}
-
 .hit-item::before {
   content: "";
 
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 7px;
+  left: 9px;
 
   width: 61px;
   height: 61px;
@@ -633,8 +632,8 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
 
   position: absolute;
-  top: 161px;
-  left: 0;
+  top: 170px;
+  left: 8px;
 }
 
 .hit-item span,
@@ -648,9 +647,10 @@ input[type="radio"].visually-hidden {
 .hover-product a {
   display: block;
   text-align: center;
-  margin-top: 10px;
+  margin-top: 4px;
   max-width: 255px;
   padding-left: 5px;
+  line-height: 23px;
 }
 
 .info {
@@ -1308,8 +1308,10 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog {
+  width: 1164px;
   padding: 0;
   margin: 0;
+  margin-left: -9px;
 }
 
 .catalog-list {
@@ -1317,7 +1319,7 @@ input[type="radio"].visually-hidden {
 
   padding: 0;
   margin: 0;
-  margin-top: -16px;
+  margin-top: -22px;
   margin-bottom: 42px;
 
   display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
@@ -1328,25 +1330,49 @@ input[type="radio"].visually-hidden {
   flex-wrap: wrap;
 }
 
-.catalog-item {
+.catalog-item,
+.hit-item {
   max-width: 267px;
   min-height: 323px;
 
   position: relative;
 
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+  padding: 9px;
 }
 
-
+.catalog-item:hover,
+.hit-item:hover {
+  background-color: rgba(248,247,244,0.2);
+  z-index: 1;
+  border-radius: 5px 5px 0 0;
+}
 
 .hover-product {
-
-  max-width: 293px;
-  min-height: 405px;
-
-  position: relative;
-
+  display: none;
+  width: 200px;
+  height: 72px;
+  position: absolute;
+  bottom: -72px;
+  left: 0;
   background-color: rgba(248,247,244,0.2);
+  z-index: 1;
+  padding-left: 45px;
+  padding-right: 40px;
+  border-radius: 0 0 5px 5px;
+}
+
+.button-product {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  padding-top: 12px;
+  padding-bottom: 11px;
+}
+
+.catalog-item:hover .hover-product,
+.hit-item:hover .hover-product {
+  display: block;
 }
 
 .pagination-list {
@@ -1384,6 +1410,8 @@ input[type="radio"].visually-hidden {
   -webkit-transform: rotate(180deg); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
       -ms-transform: rotate(180deg); /* IE 9 */
           transform: rotate(180deg);
+
+  margin-top: 12px;
 }
 
 .pagination-list path {
@@ -1392,6 +1420,7 @@ input[type="radio"].visually-hidden {
 
 .pagination-item {
   margin-right: 20px;
+  margin-top: 12px;
 }
 
 .pagination-item a {
@@ -1423,6 +1452,7 @@ background-color: #ffffff;
 
 .pagination-list li:last-child {
   margin-left: 0px;
+  margin-top: 12px;
 }
 
 /* Модальные окна и попапы*/
