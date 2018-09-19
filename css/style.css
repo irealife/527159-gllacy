@@ -1421,7 +1421,7 @@ input[type="radio"].visually-hidden {
 }
 
 .feedback-form input[type="text"],
-.feedback-form input[type="textarea"] {
+.text-feedback {
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
@@ -1521,6 +1521,7 @@ input[type="radio"].visually-hidden {
 }
 
 .login-form input,
+.feedback-form textarea,
 .feedback-form input {
   font-size: 14px;
   line-height: 24px;
@@ -1536,14 +1537,16 @@ input[type="radio"].visually-hidden {
 .login-form input:hover,
 .search-form input:hover,
 .dispatch-form input:hover,
-.feedback-form input:hover {
+.feedback-form input:hover,
+.feedback-form textarea:hover {
   border: 2px solid #9a9a9a;
 }
 
 .login-form input:focus,
 .search-form input:focus,
 .dispatch-form input:focus,
-.feedback-form input:focus {
+.feedback-form input:focus,
+.feedback-form textarea:focus {
   border: 2px solid #2e88e4;
 }
 
