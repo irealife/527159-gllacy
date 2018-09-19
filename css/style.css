@@ -1,7 +1,6 @@
 body {
   margin: 0;
   padding: 0;
-
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   line-height: 22px;
@@ -15,14 +14,12 @@ body {
   background-image: url("../img/slide1.png");
   background-repeat: no-repeat;
   background-position: top center;
-
   transition: background-image 0.5s ease, background-color 0.5s ease;
 }
 
 .site-wrapper::before,
 .site-wrapper::after {
   content: "";
-
   visibility: hidden;
 }
 
@@ -42,9 +39,7 @@ body {
 
 .slider {
   position: relative;
-
   padding-top: 321px;
-
   text-align: center;
   color: #ffffff;
 }
@@ -52,7 +47,6 @@ body {
 .slider-list {
   margin: 0;
   padding: 0;
-
   list-style: none;
 }
 
@@ -64,7 +58,6 @@ body {
   width: 700px;
   margin: -7px auto;
   margin-bottom: 27px;
-
   font-size: 60px;
   line-height: 60px;
   font-weight: 800;
@@ -74,7 +67,6 @@ body {
   display: inline-block;
   padding: 12px 44px;
   margin-top: 4px;
-
   font-weight: 600;
   font-size: 31px;
   line-height: 41px;
@@ -83,27 +75,23 @@ body {
   vertical-align: top;
   text-decoration: none;
   text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
-
   background: #f26843;
   background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
   border-radius: 50px;
   box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
   border: none;
-
   cursor: pointer;
 }
 
 .button:hover {
   color: #ffffff;
   text-decoration: none;
-
   background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
   box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
 }
 
 .button:active {
   text-decoration: none;
-
   background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
   box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }
@@ -113,9 +101,7 @@ body {
   width: 17px;
   height: 17px;
   margin-right: 8px;
-
   vertical-align: top;
-
   background-color: transparent;
   border: 2px solid #ffffff;
   border-radius: 50%;
@@ -127,7 +113,6 @@ body {
   bottom: 22px;
   left: 0;
   z-index: 20;
-
   font-size: 0;
 }
 
@@ -183,15 +168,12 @@ img {
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
   position: absolute;
-
   width: 1px;
   height: 1px;
   margin: -1px;
   border: 0;
   padding: 0;
-
   white-space: nowrap;
-
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
@@ -205,7 +187,6 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
   padding-top: 10px;
-
   display:flex;
   flex-wrap: nowrap;
   align-items: flex-start;
@@ -214,9 +195,9 @@ input[type="radio"].visually-hidden {
 .navigation,
 .navigation-current {
   list-style: none;
-  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-  display: -ms-flexbox;  /* TWEENER - IE 10 */
-  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   flex-wrap: wrap;
   padding-top: 3px;
@@ -234,7 +215,6 @@ input[type="radio"].visually-hidden {
   padding-top: 7px;
   padding-bottom: 8px;
   border-radius: 30px;
-
   background-color: #f7f6f3;
   box-shadow: 0 5px 10px -3px #323232;
 }
@@ -242,7 +222,6 @@ input[type="radio"].visually-hidden {
 .navigation-link:active {
   color: #333333;
   text-decoration: none;
-
   background-color: #f8f7f4;
 }
 
@@ -252,12 +231,10 @@ input[type="radio"].visually-hidden {
   padding-top: 6px;
   padding-bottom: 8px;
   margin-top: -6px;
-
   border-radius: 30px;
-
   background-color: #d07058;
-
   text-decoration: none;
+  box-shadow: 0 5px 10px -3px #323232;
 }
 
 .navigation > li {
@@ -269,15 +246,11 @@ input[type="radio"].visually-hidden {
   top: 31px;
   left: -7px;
   z-index: 1;
-
   display: none;
-
   list-style: none;
   min-width: 142px;
-
   margin: 0;
   padding: 0;
-
   border-radius: 5px;
   background-color: #f8f7f4;
 }
@@ -315,7 +288,6 @@ input[type="radio"].visually-hidden {
   line-height: 16px;
   font-weight: 400;
   color: #ffffff;
-
   background-color: #d07058;
 }
 
@@ -324,7 +296,6 @@ input[type="radio"].visually-hidden {
   line-height: 16px;
   font-weight: 400;
   color: #323232;
-
   margin: 0;
   padding: 0;
 }
@@ -336,15 +307,13 @@ input[type="radio"].visually-hidden {
 
 .navigation-news::after {
   content: "";
-
   position: absolute;
   bottom: 0;
   left: 50%;
   width: 90%;
   border-bottom: 1px solid rgba(50,50,50,0.2);
-
-  -webkit-transform: translate(-50%); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
-      -ms-transform: translate(-50%); /* IE 9 */
+  -webkit-transform: translate(-50%);
+      -ms-transform: translate(-50%);
           transform: translate(-50%);
 }
 
@@ -353,9 +322,9 @@ input[type="radio"].visually-hidden {
 }
 
 .user-navigation {
-  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-  display: -ms-flexbox;  /* TWEENER - IE 10 */
-  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   flex-wrap: nowrap;
   max-width: 300px;
@@ -383,11 +352,11 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
   text-decoration: none;
   background-color: rgba(255,255,255,0.2);
-
   margin: 0;
   padding: 0;
   margin-bottom: 7px;
   border-radius: 30px;
+  box-shadow: 0 5px 10px -3px #323232;
 }
 
 .search:hover,
@@ -445,12 +414,9 @@ input[type="radio"].visually-hidden {
 
 .basket-product {
   position: relative;
-
   font-size: 13px;
-
   color: #000000;
   background-color: #f8f7f4;
-
   padding-top: 8px;
   padding-bottom: 8px;
   padding-right: 16px;
@@ -459,10 +425,8 @@ input[type="radio"].visually-hidden {
 
 .basket-product::after {
   content: "";
-
   width: 21px;
   height: 20px;
-
   position: absolute;
   top: 5px;
   left: 12px;
@@ -504,7 +468,6 @@ input[type="radio"].visually-hidden {
   text-align: right;
   margin: 0;
   padding: 0;
-
   position: absolute;
   top: 72px;
   right: 0;
@@ -535,11 +498,10 @@ input[type="radio"].visually-hidden {
 
 .stock-list {
   list-style: none;
-
   min-height: 230px;
-  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-  display: -ms-flexbox;  /* TWEENER - IE 10 */
-  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   justify-content: space-between;
   margin: 0;
@@ -554,7 +516,6 @@ input[type="radio"].visually-hidden {
 
 .stock-item h3 {
   margin: 15px 18px;
-
   font-size: 35px;
   line-height: 41px;
   font-weight: bold;
@@ -563,7 +524,6 @@ input[type="radio"].visually-hidden {
 
 .stock-item p {
   margin: 5px 18px;
-
   font-size: 18px;
   line-height: 22px;
   font-weight: bold;
@@ -573,10 +533,8 @@ input[type="radio"].visually-hidden {
 .stock-button {
   font-size: 18px;
   line-height: 24px;
-
   margin: 0;
   padding: 10px 23px;
-
   position: absolute;
   top: 160px;
   right: 20px;
@@ -591,10 +549,9 @@ input[type="radio"].visually-hidden {
 
 .hit-list {
   list-style: none;
-
-  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-  display: -ms-flexbox;  /* TWEENER - IE 10 */
-  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   justify-content: space-between;
   margin: 0;
@@ -603,14 +560,11 @@ input[type="radio"].visually-hidden {
 
 .hit-item::before {
   content: "";
-
   position: absolute;
   top: 7px;
   left: 9px;
-
   width: 61px;
   height: 61px;
-
   background-image: url("../img/hit.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -630,7 +584,6 @@ input[type="radio"].visually-hidden {
   line-height: 45px;
   font-weight: bold;
   color: #ffffff;
-
   position: absolute;
   top: 170px;
   left: 8px;
@@ -656,11 +609,9 @@ input[type="radio"].visually-hidden {
 .info {
   min-height: 305px;
   max-width: 1146px;
-
   margin: 0;
   margin-bottom: 40px;
   padding: 0;
-
   background-color: #ecdec3;
   background-image: url("../img/background-wafer.jpg");
   background-repeat: repeat;
@@ -673,7 +624,6 @@ input[type="radio"].visually-hidden {
   font-weight: 500;
   letter-spacing: 0.1px;
   color: #323232;
-
   display: block;
   padding-top: 22px;
   padding-left: 21px;
@@ -682,31 +632,26 @@ input[type="radio"].visually-hidden {
 
 .info-list {
   list-style: none;
-
   margin: 0;
   padding: 0;
   padding-left: 18px;
   padding-right: 18px;
   padding-bottom: 15px;
-
-  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-  display: -ms-flexbox;  /* TWEENER - IE 10 */
-  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-
   position: relative;
 }
 
 .info-item {
   font-weight: 400;
   color: #323232;
-
   padding-top: 12px;
   padding-left: 58px;
   padding-bottom: 10px;
-
   flex-basis: 482px;
 }
 
@@ -715,9 +660,7 @@ input[type="radio"].visually-hidden {
 .info-item:nth-child(3)::before,
 .info-item:nth-child(4)::before {
   content: "";
-
   position: absolute;
-
   width: 49px;
   height: 49px;
 }
@@ -725,7 +668,6 @@ input[type="radio"].visually-hidden {
 .info-item:nth-child(1)::before {
   top: 0;
   left: 18px;
-
   background-image: url("../img/ice-cream.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -734,7 +676,6 @@ input[type="radio"].visually-hidden {
 .info-item:nth-child(2)::before {
   top: 90px;
   left: 18px;
-
   background-image: url("../img/eco.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -743,7 +684,6 @@ input[type="radio"].visually-hidden {
 .info-item:nth-child(3)::before {
   top: 0;
   left: 586px;
-
   background-image: url("../img/cow.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -752,7 +692,6 @@ input[type="radio"].visually-hidden {
 .info-item:nth-child(4)::before {
   top: 90px;
   left: 586px;
-
   background-image: url("../img/thermometer.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -772,7 +711,6 @@ input[type="radio"].visually-hidden {
   min-width: 560px;
   min-height: 220px;
   border-radius: 15px;
-
   background-color: #ffffff;
   background-image: url("../img/background-strawberry.jpg");
   background-repeat: no-repeat;
@@ -787,7 +725,6 @@ input[type="radio"].visually-hidden {
   font-size: 16px;
   font-weight: 500;
   color: #323232;
-
   margin: 0;
   margin-bottom: 5px;
 }
@@ -797,7 +734,6 @@ input[type="radio"].visually-hidden {
   line-height: 30px;
   font-weight: bold;
   color: #323232;
-
   text-decoration: underline;
 }
 
@@ -815,7 +751,6 @@ input[type="radio"].visually-hidden {
   max-width: 560px;
   min-height: 220px;
   border-radius: 15px;
-
   background-color: #f8f7f4;
   background-image: url("../img/bg-post.svg");
   background-repeat: no-repeat;
@@ -825,7 +760,6 @@ input[type="radio"].visually-hidden {
   padding: 28px 20px;
   margin: 5px;
   border-radius: 10px;
-
   background-color: #f8f7f4;
 }
 
@@ -857,9 +791,7 @@ input[type="radio"].visually-hidden {
   min-width: 369px;
   height: 44px;
   box-sizing: border-box;
-
   padding-left: 15px;
-
   background-color: #ffffff;
   border: 1px solid #d3d3d2;
   border-radius: 5px;
@@ -887,44 +819,21 @@ input[type="radio"].visually-hidden {
 
 .map iframe {
   position: relative;
-
   border: none;
-
   background-image: url("../img/map.jpg");
+  background-color: #eee8aa;
   width: 1200px;
   height: 430px;
 }
 
-/* .map::before {
-  content: "";
-
-  position: absolute;
-  top: 138px;
-  left: 266px;
-
-  width: 190px;
-  height: 140px;
-
-  background-image: url("../img/pin.png");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-
-  z-index: 1;
-} */
-
 .address {
   max-width: 252px;
-
   padding: 30px 25px;
-
   position: absolute;
   top: 64px;
   right: 27px;
-
   background-color: #ffffff;
-
   border-radius: 10px;
-
   z-index: 3;
 }
 
@@ -932,7 +841,6 @@ input[type="radio"].visually-hidden {
   font-size: 14px;
   line-height: 20px;
   color: #323232;
-
   margin-top: -2px;
   margin-bottom: 15px;
 }
@@ -950,6 +858,7 @@ input[type="radio"].visually-hidden {
   padding: 10px 27px;
   margin-top: 14px;
 }
+
 /* страница каталога */
 
 .inner-page {
@@ -980,7 +889,6 @@ input[type="radio"].visually-hidden {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
-
   list-style: none;
   margin: 0;
   margin-bottom: 7px;
@@ -996,20 +904,16 @@ input[type="radio"].visually-hidden {
 
 .breadcrumbs li {
   position: relative;
-
   margin-right: 22px;
 }
 
 .breadcrumbs li::after {
   content: "";
-
   position: absolute;
   top: 10px;
   right: -24px;
-
   width: 16px;
   height: 12px;
-
   background-image: url("../img/breadcrumbs.png");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -1027,7 +931,6 @@ input[type="radio"].visually-hidden {
   font-size: 35px;
   line-height: 41px;
   font-weight: bold;
-
   margin: 0;
   padding: 0;
   margin-top: -5px;
@@ -1035,8 +938,6 @@ input[type="radio"].visually-hidden {
 }
 
 .filters {
-
-
   margin-bottom: 40px;
 }
 
@@ -1053,7 +954,6 @@ input[type="radio"].visually-hidden {
   margin: 0;
   margin-bottom: 15px;
   margin-right: 15px;
-
   border: none;
 }
 
@@ -1069,23 +969,18 @@ input[type="radio"].visually-hidden {
   padding: 0;
   padding-right: 15px;
   margin: 0;
-
   list-style: none;
   line-height: 36px;
-
   border-radius: 30px;
 }
 
 .custom-select {
   position: relative;
-
   width: 194px;
   height: 36px;
   overflow: hidden;
-
   background-color: rgba(248,247,244,0.2);
   border-radius: 30px;
-
   cursor: pointer;
 }
 
@@ -1102,15 +997,12 @@ input[type="radio"].visually-hidden {
 .custom-select select {
   width: 214px;
   height: 36px;
-
   padding: 0;
   margin: 0;
   padding-left: 12px;
   margin-top: -2px;
-
   background: transparent;
   border: 0;
-
   color: #ffffff;
 }
 
@@ -1128,27 +1020,22 @@ input[type="radio"].visually-hidden {
 
 .range-controls {
   position: relative;
-
   height: 19px;
   padding-top: 17px;
   padding-right: 22px;
   padding-left: 22px;
-
   background-color: rgba(248,247,244,0.2);
-
   border-radius: 30px;
 }
 
 .range-controls .scale {
   height: 2px;
-
   background: #d1dad3;
 }
 
 .range-controls .bar {
   width: 70%;
   height: 2px;
-
   background: #f8f7f4;
 }
 
@@ -1156,15 +1043,12 @@ input[type="radio"].visually-hidden {
   position: absolute;
   top: 9px;
   left: 0;
-
   width: 4px;
   height: 4px;
   padding: 0;
-
   border: 8px solid #ffffff;
   background-color: #ababab;
   border-radius: 50%;
-
   cursor: pointer;
 }
 
@@ -1179,7 +1063,6 @@ input[type="radio"].visually-hidden {
 .fat-list,
 .extender-list {
   list-style: none;
-
   background-color: rgba(248,247,244,0.2);
 }
 
@@ -1190,9 +1073,7 @@ input[type="radio"].visually-hidden {
 
 .fat-list label {
   position: relative;
-
   display: block;
-
   cursor: pointer;
   user-select: none;
 }
@@ -1202,10 +1083,8 @@ input[type="radio"].visually-hidden {
   position: absolute;
   top: 6px;
   left: -30px;
-
   width: 25px;
   height: 25px;
-
   background-image: url("../img/radio-off.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -1213,14 +1092,11 @@ input[type="radio"].visually-hidden {
 
 .fat-input-radio:checked + label::after {
   content: "";
-
   position: absolute;
   top: 6px;
   left: -30px;
-
   width: 25px;
   height: 25px;
-
   background-image: url("../img/radio-on.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -1233,9 +1109,7 @@ input[type="radio"].visually-hidden {
 
 .extender-list label {
   position: relative;
-
   display: block;
-
   cursor: pointer;
   user-select: none;
 }
@@ -1245,10 +1119,8 @@ input[type="radio"].visually-hidden {
   position: absolute;
   top: 6px;
   left: -30px;
-
   width: 25px;
   height: 25px;
-
   background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -1256,14 +1128,11 @@ input[type="radio"].visually-hidden {
 
 .extender-input-checkbox:checked + label::after {
   content: "";
-
   position: absolute;
   top: 6px;
   left: -30px;
-
   width: 25px;
   height: 25px;
-
   background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -1280,16 +1149,13 @@ input[type="radio"].visually-hidden {
 
 .filter-button {
   height: 36px;
-
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
   color: #ffffff;
-
   margin-top: 23px;
   padding-left: 26px;
   padding-right: 26px;
-
   background-color: rgba(248,247,244,0.2);
   border: 2px solid #ffffff;
   border-radius: 30px;
@@ -1297,13 +1163,11 @@ input[type="radio"].visually-hidden {
 
 .filter-button:hover {
   color: #323232;
-
   background-color: #ffffff;
 }
 
 .filter-button:active {
   color: #323232;
-
   background-color: #ededed;
 }
 
@@ -1316,12 +1180,10 @@ input[type="radio"].visually-hidden {
 
 .catalog-list {
   list-style: none;
-
   padding: 0;
   margin: 0;
   margin-top: -22px;
   margin-bottom: 42px;
-
   display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
   display: -ms-flexbox;  /* TWEENER - IE 10 */
   display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
@@ -1334,9 +1196,7 @@ input[type="radio"].visually-hidden {
 .hit-item {
   max-width: 267px;
   min-height: 323px;
-
   position: relative;
-
   margin-bottom: 20px;
   padding: 9px;
 }
@@ -1378,13 +1238,9 @@ input[type="radio"].visually-hidden {
 .pagination-list {
   padding: 0 5px;
   margin: 0;
-
   position: relative;
-
   list-style: none;
-
   margin-bottom: 32px;
-
   display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
   display: -ms-flexbox;  /* TWEENER - IE 10 */
   display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
@@ -1395,22 +1251,17 @@ input[type="radio"].visually-hidden {
 
 .pagination-list::before {
   content: "";
-
   position: absolute;
   top: 6px;
   right: 180px;
-
   width: 16px;
   height: 12px;
-
   background-image: url("../img/icon-right-small.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-
   -webkit-transform: rotate(180deg); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
       -ms-transform: rotate(180deg); /* IE 9 */
           transform: rotate(180deg);
-
   margin-top: 12px;
 }
 
@@ -1429,25 +1280,25 @@ input[type="radio"].visually-hidden {
 
 .pagination-item a:hover,
 .pagination-item a:focus {
-color: #ffffff;
-text-decoration: none;
-padding: 5px 10px;
-margin-left: -10px;
-margin-right: -10px;
-border-radius: 50%;
-background-color: rgba(255,255,255,0.2);
+  color: #ffffff;
+  text-decoration: none;
+  padding: 5px 10px;
+  margin-left: -10px;
+  margin-right: -10px;
+  border-radius: 50%;
+  background-color: rgba(255,255,255,0.2);
 }
 
 .pagination-item a:active,
 .pagination-current a {
-color: #000000;
-text-decoration: none;
-pointer-events: none;
-padding: 3px 9px;
-margin-left: -10px;
-margin-right: -10px;
-border-radius: 50%;
-background-color: #ffffff;
+  color: #000000;
+  text-decoration: none;
+  pointer-events: none;
+  padding: 3px 9px;
+  margin-left: -10px;
+  margin-right: -10px;
+  border-radius: 50%;
+  background-color: #ffffff;
 }
 
 .pagination-list li:last-child {
@@ -1513,9 +1364,7 @@ background-color: #ffffff;
 
 .modal {
   position: fixed;
-
   color: #000000;
-
   background-color: #f8f7f4;
   background-position: 0 0;
   background-repeat: repeat;
@@ -1526,24 +1375,18 @@ background-color: #ffffff;
   position: absolute;
   top: 15px;
   right: 18px;
-
   width: 18px;
   height: 17px;
-
   font-size: 0;
-
   background-image: url("../img/cross-big.svg");
   border: 0;
-
   cursor: pointer;
 }
 
 .modal-feedback {
   top: 120px;
   left: 50%;
-
   display: none;
-
   width: 428px;
   padding: 25px;
   padding-top: 17px;
@@ -1597,9 +1440,7 @@ background-color: #ffffff;
   position: absolute;
   top: 59px;
   right: 211px;
-
   display: none;
-
   padding: 4px 15px;
   border-radius: 5px;
   z-index: 1;
@@ -1619,14 +1460,10 @@ background-color: #ffffff;
 
 .modal-login {
   position: absolute;
-
   width: 240px;
-
   top: 60px;
   right: 107px;
-
   display: none;
-
   padding: 4px 19px;
   border-radius: 5px;
   z-index: 1;
@@ -1689,7 +1526,6 @@ background-color: #ffffff;
   line-height: 24px;
   font-weight: 400;
   color: #999999;
-
   background-color: #ffffff;
   border: 1px solid #d3d3d2;
   border-radius: 5px;
@@ -1713,16 +1549,11 @@ background-color: #ffffff;
 
 .modal-basketful {
   position: absolute;
-
   padding-bottom: 66px;
-
   width: 540px;
-
   top: 59px;
   right: 0;
-
   display: none;
-
   border-radius: 5px;
   z-index: 1;
 }
@@ -1733,7 +1564,6 @@ background-color: #ffffff;
 
 .basketful-list {
   position: relative;
-
   padding-top: 12px;
   width: 100%;
 }
@@ -1791,25 +1621,20 @@ background-color: #ffffff;
   line-height: 18px;
   font-weight: bold;
   color: #323232;
-
   padding-top: 16px;
   padding-right: 12px;
   padding-bottom: 11px;
-
   text-align: right;
-
   position: relative;
 }
 
 .total::before {
   content: "";
-
   position: absolute;
   top: 0;
   left: 50%;
   width: 95%;
   border-bottom: 1px solid rgba(50,50,50,0.2);
-
   -webkit-transform: translate(-50%); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
       -ms-transform: translate(-50%); /* IE 9 */
           transform: translate(-50%);
@@ -1818,10 +1643,8 @@ background-color: #ffffff;
 .button-basket {
   font-size: 18px;
   line-height: 24px;
-
   margin: 0;
   padding: 13px 15px;
-
   position: absolute;
   bottom: 20px;
   right: 10px;
@@ -1829,7 +1652,6 @@ background-color: #ffffff;
 
 .modal-show {
   display: block;
-
   -webkit-animation: bounce 0.6s; /* Chr, Saf */
           animation: bounce 0.6s;
 }
@@ -1840,15 +1662,14 @@ background-color: #ffffff;
 }
 
 /* Футер */
+
 .inner-page .main-footer {
   margin-top: 20px;
 }
 
 .main-footer .line-footer {
   height: 1px;
-
   background: #a9bbb1;
-
   margin-bottom: 33px;
 }
 
@@ -1888,10 +1709,8 @@ background-color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
-
   width: 32px;
   height: 32px;
-
   border-radius: 50%;
   border: 3px solid rgba(255,255,255,0.5);
 }
@@ -1946,19 +1765,15 @@ background-color: #ffffff;
 
 .footer-current::before {
   content: "";
-
   position: absolute;
   top: 2px;;
   left: -22px;
-
   width: 15px;
   height: 13px;
-
   background-image: url("../img/heart.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
-
 
 .copyright {
   margin:0;
