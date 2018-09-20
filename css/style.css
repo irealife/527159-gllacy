@@ -239,6 +239,7 @@ input[type="radio"].visually-hidden {
 
 .navigation > li {
   position: relative;
+  padding-bottom: 13px;
 }
 
 .navigation-list {
@@ -473,7 +474,15 @@ input[type="radio"].visually-hidden {
   right: 0;
 }
 
-.timetable span {
+.tel-header {
+  font-weight: bold;
+  color: #ffffff;
+  text-align: right;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 88px;
+  right: 0;
   font-size: 22px;
   line-height: 33px;
 }
@@ -509,7 +518,6 @@ input[type="radio"].visually-hidden {
 }
 
 .stock-item {
-  position: relative;
   max-width: 560px;
   border-radius: 10px;
 }
@@ -524,6 +532,7 @@ input[type="radio"].visually-hidden {
 
 .stock-item p {
   margin: 5px 18px;
+  margin-bottom: 45px;
   font-size: 18px;
   line-height: 22px;
   font-weight: bold;
@@ -535,9 +544,16 @@ input[type="radio"].visually-hidden {
   line-height: 24px;
   margin: 0;
   padding: 10px 23px;
-  position: absolute;
-  top: 160px;
-  right: 20px;
+}
+
+.button-raspberries {
+  margin-left: 373px;
+  margin-bottom: 26px;
+}
+
+.button-chokolate {
+  margin-left: 349px;
+  margin-bottom: 26px;
 }
 
 .hit {
@@ -577,22 +593,38 @@ input[type="radio"].visually-hidden {
   border-radius: 50%;
 }
 
-.hit-item p,
-.catalog-item p,
-.hover-product p {
+.cost {
+  position: absolute;
+  top: 170px;
+  left: 8px;
+  display: flex;
+}
+
+.price {
   font-size: 45px;
   line-height: 45px;
   font-weight: bold;
   color: #ffffff;
-  position: absolute;
-  top: 170px;
-  left: 8px;
+  position: relative;
 }
 
-.hit-item span,
-.catalog-item span,
-.hover-product span {
+.price::after {
+  content: "";
+  position: absolute;
+  top: 26px;
+  right: -22px;
+  width: 25px;
+  height: 4px;
+  background-color: #ffffff;
+  transform: rotate(-70deg);
+}
+
+.dimension {
   font-size: 30px;
+  font-weight: bold;
+  color: #ffffff;
+  padding-top: 33px;
+  padding-left: 17px;
 }
 
 .hit-item a,
@@ -837,7 +869,8 @@ input[type="radio"].visually-hidden {
   z-index: 3;
 }
 
-.address p {
+.label-adress {
+  width: 150px;
   font-size: 14px;
   line-height: 20px;
   color: #323232;
@@ -845,11 +878,37 @@ input[type="radio"].visually-hidden {
   margin-bottom: 15px;
 }
 
-.address span {
+.name-adress {
   font-size: 18px;
   line-height: 24px;
   font-weight: bold;
   color: #323232;
+  margin-top: -12px;
+}
+
+.label-tel {
+  font-size: 14px;
+  line-height: 20px;
+  color: #323232;
+  margin-top: -2px;
+  margin-bottom: 15px;
+}
+
+.tel {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #323232;
+  margin-top: -10px;
+}
+
+.work {
+  font-size: 14px;
+  line-height: 20px;
+  color: #323232;
+  margin-top: -2px;
+  margin-bottom: 9px;
+  margin-top: -16px;
 }
 
 .feedback-button {
