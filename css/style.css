@@ -937,7 +937,7 @@ input[type="radio"].visually-hidden {
   display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
   display: flex;
   flex-direction: column-reverse;
-  margin-top: 18px;
+  margin-top: 11px;
   margin-bottom: -1px;
 }
 
@@ -1312,7 +1312,7 @@ input[type="radio"].visually-hidden {
   content: "";
   position: absolute;
   top: 6px;
-  right: 180px;
+  right: 190px;
   width: 16px;
   height: 12px;
   background-image: url("../img/icon-right-small.svg");
@@ -1361,7 +1361,7 @@ input[type="radio"].visually-hidden {
 }
 
 .pagination-list li:last-child {
-  margin-left: 0px;
+  margin-left: 9px;
   margin-top: 12px;
 }
 
