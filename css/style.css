@@ -9,12 +9,11 @@ body {
 }
 
 .site-wrapper {
-  min-width: 940px;
+  min-width: 1200px;
   background-color: #849d8f;
   background-image: url("../img/slide1.png");
   background-repeat: no-repeat;
   background-position: top center;
-  transition: background-image 0.5s ease, background-color 0.5s ease;
 }
 
 .site-wrapper::before,
@@ -108,6 +107,10 @@ body {
   cursor: pointer;
 }
 
+.slider-controls label:hover {
+  background-color: #b2c1b7;
+}
+
 .slider-controls {
   position: absolute;
   bottom: 22px;
@@ -179,6 +182,16 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
+.header-menu {
+  display: flex;
+}
+
+.main-header-logo {
+  padding: 0;
+  margin: 0;
+  padding-top: 9px;
+}
+
 .main-navigation {
   font-size: 16px;
   line-height: 18px;
@@ -190,6 +203,7 @@ input[type="radio"].visually-hidden {
   display:flex;
   flex-wrap: nowrap;
   align-items: flex-start;
+  width: 87%;
 }
 
 .navigation,
@@ -222,7 +236,11 @@ input[type="radio"].visually-hidden {
 .navigation-link:active {
   color: #333333;
   text-decoration: none;
+  padding-top: 7px;
+  padding-bottom: 8px;
+  border-radius: 30px;
   background-color: #f8f7f4;
+  box-shadow: inset 0 2px 2px rgba(105, 105, 105, 1);
 }
 
 .navigation .navigation-current {
@@ -260,13 +278,6 @@ input[type="radio"].visually-hidden {
   display: block;
 }
 
-.navigation-item:hover {
-  background-color: #fbded7;
-}
-
-.navigation-item:active {
-  background-color: #f6b5a5;
-}
 
 .navigation-item {
   height: 31px;
@@ -284,14 +295,6 @@ input[type="radio"].visually-hidden {
   padding-bottom: 7px;
 }
 
-.navigation-item .navigation-item-current {
-  font-size: 14px;
-  line-height: 16px;
-  font-weight: 400;
-  color: #ffffff;
-  background-color: #d07058;
-}
-
 .navigation-item a {
   font-size: 14px;
   line-height: 16px;
@@ -299,6 +302,24 @@ input[type="radio"].visually-hidden {
   color: #323232;
   margin: 0;
   padding: 0;
+}
+
+.navigation-item:hover {
+  background-color: #fbded7;
+}
+
+.navigation-item:active {
+  background-color: #f6b5a5;
+}
+
+.current-item {
+  background-color: #d07058;
+  color: #ffffff;
+}
+
+.current-item a {
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .navigation-news {
@@ -334,9 +355,8 @@ input[type="radio"].visually-hidden {
 
 .login-block,
 .basket-block {
-  margin-left: 12px;
-  margin-top: 18px;
-  margin-right: 2px;
+  margin-left: 11px;
+  margin-top: 19px;
   padding-bottom: 14px;
 }
 
@@ -349,7 +369,8 @@ input[type="radio"].visually-hidden {
 .login-link,
 .basket,
 .basket-product {
-  font-size: 13px;
+  font-size: 14px;
+  font-weight: 500;
   color: #ffffff;
   text-decoration: none;
   background-color: rgba(255,255,255,0.2);
@@ -357,7 +378,6 @@ input[type="radio"].visually-hidden {
   padding: 0;
   margin-bottom: 7px;
   border-radius: 30px;
-  box-shadow: 0 5px 10px -3px #323232;
 }
 
 .search:hover,
@@ -374,7 +394,7 @@ input[type="radio"].visually-hidden {
 .search {
   position: relative;
   padding-top: 3px;
-  padding-right: 28px;
+  padding-right: 30px;
   padding-left: 3px;
   padding-bottom: 13px;
 }
@@ -415,13 +435,14 @@ input[type="radio"].visually-hidden {
 
 .basket-product {
   position: relative;
-  font-size: 13px;
+  font-size: 14px;
+  font-weight: 500;
   color: #000000;
   background-color: #f8f7f4;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-top: 6px;
+  padding-bottom: 9px;
   padding-right: 16px;
-  padding-left: 44px;
+  padding-left: 43px;
 }
 
 .basket-product::after {
@@ -429,8 +450,8 @@ input[type="radio"].visually-hidden {
   width: 21px;
   height: 20px;
   position: absolute;
-  top: 5px;
-  left: 12px;
+  top: 6px;
+  left: 15px;
   background-image: url("../img/basket-red.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -495,14 +516,14 @@ input[type="radio"].visually-hidden {
   background-color: #862944;
   background-image: url("../img/raspberries.png");
   background-position: top center;
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
 }
 
 .chokolate {
   background-color: #21120e;
   background-image: url("../img/chokolate.png");
   background-position: top center;
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
 }
 
 .stock-list {
@@ -557,7 +578,7 @@ input[type="radio"].visually-hidden {
 }
 
 .hit {
-  width: 1164px;
+  min-width: 1164px;
   margin-bottom: -14px;
   margin-top: -10px;
   margin-left: -9px;
@@ -569,7 +590,7 @@ input[type="radio"].visually-hidden {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 }
@@ -633,9 +654,10 @@ input[type="radio"].visually-hidden {
   display: block;
   text-align: center;
   margin-top: 4px;
-  max-width: 255px;
+  max-width: 256px;
   padding-left: 5px;
   line-height: 23px;
+  font-weight: 500;
 }
 
 .info {
@@ -844,26 +866,24 @@ input[type="radio"].visually-hidden {
 }
 
 .map {
-  min-width: 1200px;
   position: relative;
-  margin-left: -27px;
 }
 
 .map iframe {
   position: relative;
   border: none;
   background-image: url("../img/map.jpg");
-  background-color: #eee8aa;
-  width: 1200px;
   height: 430px;
+  background-repeat: no-repeat;
+  background-position: top center;
 }
 
 .address {
   max-width: 252px;
   padding: 30px 25px;
   position: absolute;
-  top: 64px;
-  right: 27px;
+  top: 65px;
+  right: 269px;
   background-color: #ffffff;
   border-radius: 10px;
   z-index: 3;
@@ -952,6 +972,7 @@ input[type="radio"].visually-hidden {
   margin: 0;
   margin-bottom: 7px;
   padding: 0;
+  width: 85%;
 }
 
 .breadcrumbs a,
@@ -1026,7 +1047,7 @@ input[type="radio"].visually-hidden {
 
 .filter ul {
   padding: 0;
-  padding-right: 15px;
+  padding-right: 10px;
   margin: 0;
   list-style: none;
   line-height: 36px;
@@ -1054,15 +1075,21 @@ input[type="radio"].visually-hidden {
 }
 
 .custom-select select {
-  width: 214px;
-  height: 36px;
+  width: 224px;
+  height: 40px;
   padding: 0;
   margin: 0;
-  padding-left: 12px;
-  margin-top: -2px;
+  padding-left: 24px;
   background: transparent;
   border: 0;
   color: #ffffff;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  position: relative;
+  left: -12px;
+  top: -3px;
 }
 
 .custom-select:hover select {
@@ -1119,6 +1146,14 @@ input[type="radio"].visually-hidden {
   left: 133px;
 }
 
+.range-controls .toggle:hover,
+.range-controls .toggle:focus {
+  width: 6px;
+  height: 6px;
+  margin-top: -1px;
+  margin-left: -1px;
+}
+
 .fat-list,
 .extender-list {
   list-style: none;
@@ -1135,6 +1170,7 @@ input[type="radio"].visually-hidden {
   display: block;
   cursor: pointer;
   user-select: none;
+  font-weight: 500;
 }
 
 .fat-input-radio + label::before {
@@ -1147,6 +1183,18 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/radio-off.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+  opacity: 0.8;
+}
+
+.fat-input-radio:disabled + label::before {
+  background-image: url("../img/radio-off.svg");
+  opacity: 0.4;
+}
+
+.fat-input-radio:hover + label::before,
+.fat-input-radio:focus + label::before {
+  background-image: url("../img/radio-off.svg");
+  opacity: 1;
 }
 
 .fat-input-radio:checked + label::after {
@@ -1159,6 +1207,18 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/radio-on.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+  opacity: 0.8;
+}
+
+.fat-input-radio:disabled + label::after {
+  background-image: url("../img/radio-on.svg");
+  opacity: 0.4;
+}
+
+.fat-input-radio:hover + label::after,
+.fat-input-radio:focus + label::after {
+  background-image: url("../img/radio-on.svg");
+  opacity: 1;
 }
 
 .extender-item {
@@ -1171,6 +1231,7 @@ input[type="radio"].visually-hidden {
   display: block;
   cursor: pointer;
   user-select: none;
+  font-weight: 500;
 }
 
 .extender-input-checkbox + label::before {
@@ -1183,6 +1244,18 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+  opacity: 0.8;
+}
+
+.extender-input-checkbox:disabled + label::before {
+  background-image: url("../img/checkbox-off.svg");
+  opacity: 0.4;
+}
+
+.extender-input-checkbox:hover + label::before,
+.extender-input-checkbox:focus + label::before {
+  background-image: url("../img/checkbox-off.svg");
+  opacity: 1;
 }
 
 .extender-input-checkbox:checked + label::after {
@@ -1195,6 +1268,18 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+  opacity: 0.8;
+}
+
+.extender-input-checkbox:disabled + label::after {
+  background-image: url("../img/checkbox-on.svg");
+  opacity: 0.4;
+}
+
+.extender-input-checkbox:hover + label::after,
+.extender-input-checkbox:focus + label::after {
+  background-image: url("../img/checkbox-on.svg");
+  opacity: 1;
 }
 
 .fat-list,
@@ -1228,10 +1313,12 @@ input[type="radio"].visually-hidden {
 .filter-button:active {
   color: #323232;
   background-color: #ededed;
+  box-shadow: inset 0 2px 2px rgba(105, 105, 105, 1);
+  border: 0;
 }
 
 .catalog {
-  width: 1164px;
+  min-width: 1164px;
   padding: 0;
   margin: 0;
   margin-left: -9px;
@@ -1247,7 +1334,6 @@ input[type="radio"].visually-hidden {
   display: -ms-flexbox;  /* TWEENER - IE 10 */
   display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
 }
 
@@ -1257,7 +1343,13 @@ input[type="radio"].visually-hidden {
   min-height: 323px;
   position: relative;
   margin-bottom: 20px;
+  margin-right: 8px;
   padding: 9px;
+}
+
+.catalog-item:nth-child(4n),
+.hit-item:nth-child(4n) {
+  margin-right: 0;
 }
 
 .catalog-item:hover,
@@ -1334,6 +1426,7 @@ input[type="radio"].visually-hidden {
 }
 
 .pagination-item a {
+  font-weight: 500;
   text-decoration: none;
 }
 
@@ -1353,7 +1446,7 @@ input[type="radio"].visually-hidden {
   color: #000000;
   text-decoration: none;
   pointer-events: none;
-  padding: 3px 9px;
+  padding: 4px 9px;
   margin-left: -10px;
   margin-right: -10px;
   border-radius: 50%;
@@ -1481,10 +1574,10 @@ input[type="radio"].visually-hidden {
 
 .feedback-form input[type="text"],
 .text-feedback {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 24px;
-  font-weight: 400;
-  color: #999999;
+  font-weight: 700;
+  color: #323232;
 }
 
 .feedback-button-form {
@@ -1580,7 +1673,6 @@ input[type="radio"].visually-hidden {
 }
 
 .login-form input,
-.feedback-form textarea,
 .feedback-form input {
   font-size: 14px;
   line-height: 24px;
@@ -1591,6 +1683,15 @@ input[type="radio"].visually-hidden {
   border-radius: 5px;
   box-sizing: border-box;
   padding-left: 15px;
+}
+
+.feedback-form textarea {
+  background-color: #ffffff;
+  border: 1px solid #d3d3d2;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding-left: 15px;
+  padding-top: 8px;
 }
 
 .login-form input:hover,
@@ -1755,13 +1856,12 @@ input[type="radio"].visually-hidden {
   display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   list-style: none;
-  min-width: 187px;
+  width: 400px;
   margin: 0;
   padding: 0;
   margin-top: 2px;
-  margin-right: 235px;
+  margin-right: 21px;
 }
 
 .social-button {
@@ -1775,6 +1875,7 @@ input[type="radio"].visually-hidden {
   height: 32px;
   border-radius: 50%;
   border: 3px solid rgba(255,255,255,0.5);
+  margin-right: 11px;
 }
 
 .social-button:hover g,
@@ -1816,19 +1917,19 @@ input[type="radio"].visually-hidden {
 .footer-menu-left a,
 .footer-menu-right a {
   font-size: 13px;
-  line-height: 18px;
-  font-weight: 500;
+  line-height: 16px;
+  font-weight: 400;
 }
 
-.footer-current {
-  font-weight: bold;
+.footer-menu-left .footer-current {
+  font-weight: 700;
   position: relative;
 }
 
 .footer-current::before {
   content: "";
   position: absolute;
-  top: 2px;;
+  top: 2px;
   left: -22px;
   width: 15px;
   height: 13px;
@@ -1848,7 +1949,7 @@ input[type="radio"].visually-hidden {
 
 .copyright p {
   font-size: 12px;
-  line-height: 18px;
+  line-height: 16px;
   font-weight: 400;
   color: #fefefe;
   margin: 0;
