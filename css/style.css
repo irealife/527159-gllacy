@@ -914,12 +914,26 @@ input[type="radio"].visually-hidden {
   margin-bottom: 15px;
 }
 
+.phone {
+  margin-top: -10px;
+}
+
 .tel {
   font-size: 18px;
   line-height: 24px;
   font-weight: bold;
   color: #323232;
-  margin-top: -10px;
+  text-decoration: none;
+}
+
+.tel:hover,
+.tel:focus,
+.tel:active {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #323232;
+  text-decoration: none;
 }
 
 .work {
