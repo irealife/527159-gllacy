@@ -866,7 +866,7 @@ input[type="radio"].visually-hidden {
   padding: 10px 20px;
 }
 
-.map {
+.container {
   position: relative;
 }
 
@@ -884,7 +884,7 @@ input[type="radio"].visually-hidden {
   padding: 30px 25px;
   position: absolute;
   top: 65px;
-  right: 269px;
+  right: 26px;
   background-color: #ffffff;
   border-radius: 10px;
   z-index: 3;
@@ -950,7 +950,7 @@ input[type="radio"].visually-hidden {
   font-size: 18px;
   line-height: 24px;
   padding: 10px 27px;
-  margin-top: 14px;
+  margin-top: 17px;
 }
 
 /* страница каталога */
@@ -1852,7 +1852,7 @@ input[type="radio"].visually-hidden {
 }
 
 .main-footer {
-  margin-top: 29px;
+  margin-top: 32px;
   padding: 0;
   padding-bottom: 25px;
   min-height: 108px;
@@ -1876,7 +1876,7 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
   margin-top: 2px;
-  margin-right: 21px;
+  margin-right: 22px;
 }
 
 .social-button {
@@ -1890,7 +1890,7 @@ input[type="radio"].visually-hidden {
   height: 32px;
   border-radius: 50%;
   border: 3px solid rgba(255,255,255,0.5);
-  margin-right: 11px;
+  margin-right: 12px;
 }
 
 .social-button:hover g,
